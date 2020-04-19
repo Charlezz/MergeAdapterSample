@@ -38,7 +38,7 @@ class MainActivity : AppCompatActivity() {
             .observe(this, Observer { postAdapter.submitList(it) })
 
         val config = MergeAdapter.Config.Builder()
-            .setIsolateViewTypes(false)
+            .setIsolateViewTypes(true)
             .setStableIdMode(MergeAdapter.Config.StableIdMode.NO_STABLE_IDS)
             .build()
 
